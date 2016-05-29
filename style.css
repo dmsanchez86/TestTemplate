@@ -7,6 +7,10 @@ body{
 	font-family: "komika";
 	font-size: 16px;
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
 /* Contenedor */
 .container{
 	margin: 0 auto;
@@ -335,4 +339,56 @@ footer{
 	background-image: -o-linear-gradient(top, rgba(10,146,10,1), #0C730C);
 	background-image: linear-gradient(top, rgba(10,146,10,1), #0C730C);
 	background-color: rgba(10,146,10,1);
+}
+@media (max-width: 800px){
+	footer{margin-bottom: 0;border-radius: 0;}
+
+	.header{height: 115px;}
+
+	.aside,.articulos{
+		width: 100%;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.busqueda{
+		top: 1rem;
+		left: 2rem;
+		right: inherit;
+	}
+
+	.logo{
+		position: relative;
+		top: 2.5rem;
+	}
+}
+@media (max-width: 650px){
+	.container_img img {
+    	max-width: 220px;
+	}
+}
+@media (max-width: 580px){
+	.menu{padding: 0}
+	.menu ul li{
+		display: block;
+		text-align: center;
+	}
+	.container_img{
+		float: none;
+		display: block;
+
+		text-align: center;
+	}
+	.contenido{
+		padding: 1.2rem;
+	}
+	.popular-post ul li .container_img{
+		float: left;
+	}
+	footer{
+	    padding: .5em 1rem;
+	}
+	.container_img img{
+		max-width: auto;
+	}
 }
