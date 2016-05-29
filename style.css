@@ -183,13 +183,20 @@ body{
 	vertical-align: top;
 }
 .aside{width: calc(100% / 2 - 15% - 30px); margin-left: 20px;padding-left: 1.5rem; box-sizing: border-box;}
-.articulos{ color: darkgray; font-family: Helvetica; width: calc(100% / 2 + 15%)}
+.articulos{ color: darkgray; font-family: Helvetica; width: calc(100% / 2 + 15%);}
 .articulo{
-	margin: 5px 0 5px 50;
+    overflow: hidden;
+	margin: 1rem .5rem 1rem;
 	clear: both;
 }
-.articulo h2{ margin: .5em 0; transition: color 500ms ease; }
-.articulo h2:hover{ color: #066306; text-shadow: 0 0 1px rgba(0,0,0,.5); }
+.articulo:first-child{
+	margin-top: 0;
+}
+.articulo h2{
+	margin: 1rem 0;
+}
+.articulo a{ margin: .5em 0; transition: color 500ms ease;color: white; }
+.articulo a:hover{ color: #066306; text-shadow: 0 0 1px rgba(0,0,0,.5); }
 .articulo p{ line-height: 25px; }
 .container_img{ 
 	float: left; 
@@ -236,7 +243,8 @@ body{
 	background-color: rgba(10,146,10,1);
 }
 .btn-read button:hover{
-	box-shadow: 2px 2px 8px rgba(0,0,0,.6);
+	box-shadow: 2xpx 2xpx 8px rgba(0,0,0,.6);
+	text-decoration: underline;
 }
 .btn-read button:focus{ outline: none; }
 .nav-bottom{
@@ -305,7 +313,13 @@ p {
 .popular-post ul li .container_img img{width: 100%;}
 .popular-post ul li span{display: inline-block;margin-top: .5rem;}
 .popular-post ul li em{display: inline-block;margin-top: .5rem;font-size: 12px;}
+a{text-decoration: none;}
+
 /* Pie de Página */
+footer a{
+	color: white;
+	font-weight: bold;
+}
 footer{
 	color: white;
 	font-family: Helvetica;
