@@ -219,7 +219,6 @@ body{
 	text-align: right;
 }
 .btn-read button{
-	background-color: rgba(10,146,10,1);
 	cursor: pointer;
 	border-radius: 3px;
 	color: white;
@@ -229,11 +228,15 @@ body{
 	padding: .35em .8em .3em;
 	transition: all 300ms ease;
 	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+	background-image: -webkit-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -moz-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -ms-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -o-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-color: rgba(10,146,10,1);
 }
 .btn-read button:hover{
-	background: white;
-	color: rgba(10,146,10,1);
-	box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+	box-shadow: 2px 2px 8px rgba(0,0,0,.6);
 }
 .btn-read button:focus{ outline: none; }
 .nav-bottom{
@@ -304,7 +307,6 @@ p {
 .popular-post ul li em{display: inline-block;margin-top: .5rem;font-size: 12px;}
 /* Pie de Página */
 footer{
-	background-color: rgba(10,146,10,.8);
 	color: white;
 	font-family: Helvetica;
 	font-size: smaller;
@@ -313,4 +315,10 @@ footer{
 	text-align: center;
 	margin-bottom: 1.5rem;
 	border-radius: 0 0 10px 10px;
+	background-image: -webkit-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -moz-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -ms-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: -o-linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-image: linear-gradient(top, rgba(10,146,10,1), #0C730C);
+	background-color: rgba(10,146,10,1);
 }
