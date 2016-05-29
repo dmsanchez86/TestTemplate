@@ -1,0 +1,15 @@
+{
+  "name": "test_maquetacion",
+  "version": "1.0.0",
+  "description": "knowing the power of html5 and css3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html5",
+    "css3"
+  ],
+  "author": "Daniel M. Sanchez",
+  "license": "MIT"
+}
